@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>What I do</title>
+    <link rel="shortcut icon" href="css/img/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="css/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="32x32" href="css/img/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="css/img/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="css/img/favicon-16x16.png">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/white.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <style>
+        section h1 {
+            color: #fff !important
+        }
+        .reveal section img {
+            background: none;
+            border: none;
+            box-shadow: none;
+        }
+        section .grid {
+            color: #fff;
+        }
+    </style>
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section data-background="#7AB2DC" data-background-image="css/img/me-bg.png" data-background-size="200px" data-background-repeat="repeat">
+                <h1>HELLO</h1>
+               <img data-src="css/img/me.svg" alt="" style="width:30%;height:auto">
+            </section>
+            <section data-background="#B9BB0F">
+                <h1>Web development</h1>
+                <div class="grid grid-pad">
+                    <div class="col-1-4"> <img data-src="css/img/myiss.png" alt="myiss">myISS</div>
+                    <div class="col-1-4"> <img data-src="css/img/bus.png" alt="bus">Bus</div>
+                    <div class="col-1-4"> <img data-src="css/img/jobbot.png" alt="jobbot">JobBot</div>
+                    <div class="col-1-4"> <img data-src="css/img/co2.png" alt="co2">CO<sub>2</sub>
+                    </div>
+                </div>
+                <!--/grid-->
+            </section>
+            <section data-background="#f7f7f7">
+                <img data-src="css/img/myiss-stats.png" alt=""> myISS
+            </section>
+            <section data-background="#f7f7f7">
+                <img data-src="css/img/bus-stats.png" alt=""> Bus
+            </section>
+            <section data-background="#FCC600">
+                <div class="grid grid-pad">
+                    <div class="col-1-3"> <img data-src="css/img/html-css-js.png" alt="">
+                    </div>
+                    <div class="col-1-3"> <img data-src="css/img/git.png" alt="">
+                    </div>
+                    <div class="col-1-3"> <img data-src="css/img/npm.png" alt="">
+                    </div>
+                </div>
+                <div class="grid grid-pad">
+                    <div class="col-1-3"> <img data-src="css/img/node.png" alt="">
+                    </div>
+                    <div class="col-1-3"> <img data-src="css/img/angular.png" alt="">
+                    </div>
+                    <div class="col-1-3"> <img data-src="css/img/jquery.png" alt="">
+                    </div>
+                </div>
+                <!--/grid-->
+            </section>
+            <section data-background="css/img/yes.gif">
+                <h1>Sometimes</h1>
+            </section>
+            <section data-background="css/img/smash.gif">
+                <h1>But mostly</h1>
+            </section>
+            <section data-background="css/img/office.svg">
+                <h1>Graphic Design</h1>
+            </section>
+            <section data-background-iframe="http://iss-uk.me/christmas/">
+            </section>
+            <section data-background-iframe="http://iss-uk.me/summer/">
+            </section>
+            <section data-background-iframe="http://iss-uk.me/halloween/">
+            </section>
+
+            <section data-background="#E2740C" data-background-image="css/img/questions-bg.png" data-background-size="200px" data-background-repeat="repeat">
+                <h1>Questions?</h1>
+            </section>
+        </div>
+    </div>
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+    <script>
+        // More info https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+			history: true,
+			center: true,
+			transition: 'slide',
+			dependencies: [
+				// Cross-browser shim that fully implements classList - https://github.com/eligrey/classList.js/
+				{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+				// Interpret Markdown in <section> elements
+				{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+				{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+				// Syntax highlight for <code> elements
+				{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+				// Zoom in and out with Alt+click
+				{ src: 'plugin/zoom-js/zoom.js', async: true },
+				// Speaker notes
+				{ src: 'plugin/notes/notes.js', async: true },
+				// MathJax
+				{ src: 'plugin/math/math.js', async: true }
+			]
+        });
+    </script>
+</body>
+
+</html>
